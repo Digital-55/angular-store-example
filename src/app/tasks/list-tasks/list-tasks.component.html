@@ -1,0 +1,8 @@
+<div class="right" *ngIf="tasks">
+  <h3>Tareas:</h3>
+  <ul>
+    <li *ngFor="let task of tasks | async">
+      <h3>{{ task.name }}</h3>
+    </li>
+  </ul>
+</div>
